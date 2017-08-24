@@ -1,3 +1,37 @@
+python-django-formtools (2.0-1) unstable; urgency=medium
+
+  [ Daniel Baumann ]
+  * Updating vcs fields.
+  * Updating copyright format url.
+  * Updating maintainer field.
+  * Running wrap-and-sort -bast.
+  * Updating standards version to 4.0.0.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+  * Updating standards version to 4.0.1.
+  * Updating standards version to 4.1.0.
+
+  [ Thomas Goirand ]
+  * New upstream release:
+    - Do not use lazy_property anymore (Closes: #865944).
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 24 Aug 2017 15:02:32 +0000
+
+python-django-formtools (1.0+20160714.git54f1ccca01-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URLs (https).
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+
+  [ Thomas Goirand ]
+  * New upstream release based on git 1.0+20160714.git54f1ccca01
+    (Closes: #828667).
+  * Fixed debian/copyright ordering.
+  * Standards-Version: 3.9.8 (no change).
+  * Using pkgos-dh_auto_install from openstack-pkg-tools >= 52~.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 19 Jul 2016 09:20:46 +0000
+
 python-django-formtools (1.0-2) unstable; urgency=medium
 
   * Fix FTBFS with Python 3 (Closes: #803705).

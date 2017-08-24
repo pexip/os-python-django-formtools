@@ -1,6 +1,8 @@
 from django.conf.urls import url
-from .forms import (SessionContactWizard, CookieContactWizard,
-                    Page1, Page2, Page3, Page4)
+
+from .forms import (
+    CookieContactWizard, Page1, Page2, Page3, Page4, SessionContactWizard,
+)
 
 
 def get_named_session_wizard():
@@ -17,6 +19,7 @@ def get_named_cookie_wizard():
         url_name='nwiz_cookie',
         done_step_name='nwiz_cookie_done'
     )
+
 
 urlpatterns = [
     url(r'^nwiz_session/(?P<step>.+)/$', get_named_session_wizard(), name='nwiz_session'),
