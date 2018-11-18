@@ -19,7 +19,7 @@ Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-django-formtools.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-django-formtools.git
 Homepage: http://django-formtools.readthedocs.org/en/latest/
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: python-django-formtools
 Architecture: all
