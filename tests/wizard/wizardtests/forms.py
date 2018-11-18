@@ -7,10 +7,9 @@ from django.core.files.storage import FileSystemStorage
 from django.forms.formsets import formset_factory
 from django.forms.models import modelformset_factory
 from django.http import HttpResponse
-from django.template import Template, Context
+from django.template import Context, Template
 
 from formtools.wizard.views import WizardView
-
 
 temp_storage_location = tempfile.mkdtemp(dir=os.environ.get('DJANGO_TEST_TEMP_DIR'))
 temp_storage = FileSystemStorage(location=temp_storage_location)
@@ -30,6 +29,7 @@ class Page2(forms.Form):
 
 class Page3(forms.Form):
     random_crap = forms.CharField(max_length=100)
+
 
 Page4 = formset_factory(Page3, extra=2)
 
@@ -60,6 +60,7 @@ class UserForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ('username', 'email')
+
 
 UserFormSet = modelformset_factory(User, form=UserForm)
 
