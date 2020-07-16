@@ -1,3 +1,9 @@
+python-django-formtools (2.0-1pexip3) pexip; urgency=medium
+
+  * Rebuild in buster environment
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Thu, 16 Jul 2020 03:50:07 +0000
+
 python-django-formtools (2.0-1pexip2) pexip; urgency=medium
 
   * Bump version number for override update
