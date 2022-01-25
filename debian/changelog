@@ -1,3 +1,37 @@
+python-django-formtools (2.2-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 08 May 2020 10:22:36 +0200
+
+python-django-formtools (2.2-1) experimental; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.1.
+
+  [ Thomas Goirand ]
+  * New upstream release.
+  * Removed add-use_required_attribute-false-in-test.patch applied upstream.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 22 Apr 2020 21:52:53 +0200
+
+python-django-formtools (2.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+
+  [ Thomas Goirand ]
+  * Removed Python 2 support.
+  * New upstream release.
+  * Django 2.2 compat:
+    add-use_required_attribute-false-in-test.patch
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 10 Jul 2019 11:42:01 +0200
+
 python-django-formtools (2.0-1pexip3) pexip; urgency=medium
 
   * Rebuild in buster environment

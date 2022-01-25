@@ -2,48 +2,27 @@ Source: python-django-formtools
 Section: python
 Priority: optional
 Maintainer: Pexip AS <packaging@pexip.com>
-XSBC-Pexip-Original-Maintainer: Debian OpenStack <openstack-devel@lists.alioth.debian.org>
+XSBC-Pexip-Original-Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
 XSBC-Pexip-Original-Uploaders:
  Thomas Goirand <zigo@debian.org>,
 Build-Depends:
- debhelper (>= 9),
+ debhelper-compat (= 11),
  dh-python,
- openstack-pkg-tools (>= 52~),
- python-all,
- python-setuptools,
- python-sphinx,
+ openstack-pkg-tools,
  python3-all,
  python3-setuptools,
+ python3-sphinx,
 Build-Depends-Indep:
- python-coverage,
- python-django (>= 1.7),
  python3-coverage,
- python3-django (>= 1.7),
-Standards-Version: 4.1.0
-Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python/python-django-formtools.git
-Vcs-Git: https://anonscm.debian.org/git/openstack/python/python-django-formtools.git
+ python3-django,
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/openstack-team/python/python-django-formtools
+Vcs-Git: https://salsa.debian.org/openstack-team/python/python-django-formtools.git
 Homepage: http://django-formtools.readthedocs.org/en/latest/
 XS-Pexip-Upstream: http://ftp.debian.org/debian/ bullseye
 
-Package: python-django-formtools
-Architecture: all
-Depends:
- python-django (>= 1.7),
- ${misc:Depends},
- ${python:Depends},
-Suggests:
- python-django-formtools-doc,
-Description: set of high-level abstractions for Django forms - Python 2.7
- Django's formtools is a set of high-level abstractions for Django forms.
- Currently for form previews and multi-step forms.
- .
- This code used to live in Django proper: in django.contrib.formtools. But it
- was separated into a standalone package in Django 1.8 to keep the framework's
- core clean.
- .
- This package contains the Python 2.7 module.
-
 Package: python-django-formtools-doc
+Build-Profiles: <!nodoc>
 Section: doc
 Architecture: all
 Depends:
@@ -62,7 +41,7 @@ Description: set of high-level abstractions for Django forms - doc
 Package: python3-django-formtools
 Architecture: all
 Depends:
- python3-django (>= 1.7),
+ python3-django,
  ${misc:Depends},
  ${python3:Depends},
 Suggests:
