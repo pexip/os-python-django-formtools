@@ -23,7 +23,7 @@ Standards-Version: 4.1.0
 Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python/python-django-formtools.git
 Vcs-Git: https://anonscm.debian.org/git/openstack/python/python-django-formtools.git
 Homepage: http://django-formtools.readthedocs.org/en/latest/
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bullseye
 
 Package: python-django-formtools
 Architecture: all
