@@ -19,7 +19,7 @@ Standards-Version: 4.4.1
 Vcs-Browser: https://salsa.debian.org/openstack-team/python/python-django-formtools
 Vcs-Git: https://salsa.debian.org/openstack-team/python/python-django-formtools.git
 Homepage: http://django-formtools.readthedocs.org/en/latest/
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ bullseye
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bullseye
 
 Package: python-django-formtools-doc
 Build-Profiles: <!nodoc>
