@@ -10,6 +10,7 @@ Build-Depends:
  openstack-pkg-tools,
  python3-all,
  python3-setuptools,
+ python3-setuptools-scm,
  python3-sphinx,
 Build-Depends-Indep:
  python3-coverage,
