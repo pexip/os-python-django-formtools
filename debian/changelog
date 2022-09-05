@@ -1,3 +1,9 @@
+python-django-formtools (2.2-2pexip4) pexip-bullseye; urgency=medium
+
+  * Bullseye rebuild for ARM64 inclusion
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Mon, 05 Sep 2022 10:35:24 +0100
+
 python-django-formtools (2.2-2pexip3) pexip-bullseye; urgency=medium
 
   * Main bullseye build
