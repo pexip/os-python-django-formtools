@@ -14,13 +14,13 @@ django-formtools
     :alt: Supported Python versions
     :target: https://pypi.org/project/django-formtools/
 
-.. image:: https://img.shields.io/travis/jazzband/django-formtools/master.svg
-    :alt: TravisCI Build Status
-    :target: https://travis-ci.org/jazzband/django-formtools
+.. image:: https://github.com/jazzband/django-formtools/workflows/Test/badge.svg
+   :target: https://github.com/jazzband/django-formtools/actions
+   :alt: GitHub Actions
 
-.. image:: https://img.shields.io/coveralls/jazzband/django-formtools/master.svg
-    :alt: Coveralls Test Coverage
-    :target: https://coveralls.io/r/jazzband/django-formtools?branch=master
+.. image:: https://codecov.io/gh/jazzband/django-formtools/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/jazzband/django-formtools
+   :alt: Test Coverage
 
 Django's "formtools" is a set of high-level abstractions for Django forms.
 Currently for form previews and multi-step forms.
@@ -65,12 +65,12 @@ the ``-l`` option::
 
     $ tox -l
     ...
-    py35-django-AB
-    py35-django-master
+    py38-django-AB
+    py38-django-master
 
 You can run each environment with the ``-e`` option::
 
-    $ tox -e py35-django-AB  # runs the tests only on Python 3.5 and Django A.B.x
+    $ tox -e py38-django-AB  # runs the tests only on Python 3.5 and Django A.B.x
 
 Optionally you can also specify a country whose tests you want to run::
 
@@ -78,6 +78,6 @@ Optionally you can also specify a country whose tests you want to run::
 
 And combine both options::
 
-    $ COUNTRY=us tox -e py35-django-AB
+    $ COUNTRY=us tox -e py38-django-AB
 
 __ https://tox.readthedocs.io/en/latest/install.html
