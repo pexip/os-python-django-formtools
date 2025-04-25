@@ -3,6 +3,32 @@ Changelog
 
 This page details the changes in the various ``django-formtools`` releases.
 
+2.4.1 (2023-05-13)
+------------------
+
+- Fixed a regression causing a recursion error when getting ``get_form_list()``
+  from a form condition (#220).
+
+- Removed Python 3.6 support and added Python 3.11 to test matrix.
+
+- Dropped testing for Django < 3.2 and confirmed support for Django 4.2.
+
+2.4 (2022-09-28)
+----------------
+
+- Updated translations from Transifex.
+
+- Any kwarg passed to ``render_goto_step()`` is passed over to ``render``.
+
+- ``WizardView`` is using ``get_form_list()`` instead of directly accessing
+  ``form_list`` (#168).
+
+- Added Python 3.10 to test matrix.
+
+- Dropped testing for Django 3.1.
+
+- Confirmed support for Django 4.0 and 4.1.
+
 2.3 (2021-04-18)
 ----------------
 
